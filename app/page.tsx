@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
@@ -5,9 +7,12 @@ export default function Home() {
       <header className="container mx-auto px-4 py-8">
         <nav className="flex justify-between items-center">
           <h1 className="text-3xl font-bold text-white">Archeon</h1>
-          <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg transition-colors">
+          <Link
+            href={"/build"}
+            className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg transition-colors"
+          >
             Get Started
-          </button>
+          </Link>
         </nav>
       </header>
 
@@ -24,9 +29,12 @@ export default function Home() {
           From minimalist to maximalist, create a workspace that inspires you.
         </p>
         <div className="flex gap-4 justify-center">
-          <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all hover:scale-105">
+          <Link
+            href={"/build"}
+            className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all hover:scale-105"
+          >
             Start Building
-          </button>
+          </Link>
           <button className="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-lg text-lg font-semibold backdrop-blur-sm transition-all hover:scale-105">
             View Gallery
           </button>
